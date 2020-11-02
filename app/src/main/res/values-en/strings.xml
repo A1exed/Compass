@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Compass</string>
+    <string name="btn_compass">Compass</string>
+    <string name="btn_map">Map</string>
+    <string name="grad">0°</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="settings_title">Information</string>
+    <string name="developers">Developers:</string>
+    <string name="pashin_alexander">Pashin Alexander</string>
+    <string name="karpov_maxim">Karpov Maxim</string>
+    <string name="contact_us">Contact us:</string>
+    <string name="email">alexp280898@gmail.com</string>
+    <string name="id">ID</string>
+    <string name="city">City</string>
+    <string name="count">Count</string>
+    <string name="action">Action</string>
+    <string name="btn_db">DB</string>
+    <string name="btn_login">Log in</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome! "</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="btn_insert">Insert</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_update">Update</string>
+</resources>

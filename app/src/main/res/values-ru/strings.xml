@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Компас</string>
+    <string name="btn_compass">Компас</string>
+    <string name="btn_map">Карта</string>
+    <string name="grad">0°</string>
+    <string name="title_activity_maps">Карта</string>
+    <string name="settings_title">Информация</string>
+    <string name="developers">Разработчики:</string>
+    <string name="pashin_alexander">Пашин Александр</string>
+    <string name="karpov_maxim">Карпов Максим</string>
+    <string name="contact_us">Контактные данные:</string>
+    <string name="email">alexp280898@gmail.com</string>
+    <string name="id">ID</string>
+    <string name="city">Город</string>
+    <string name="count">Счет</string>
+    <string name="action">Действие</string>
+    <string name="btn_db">БД</string>
+    <string name="btn_login">Вход</string>
+    <string name="prompt_username">Имя пользователя</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="action_sign_in">Вход</string>
+    <string name="action_sign_in_short">Авторизация</string>
+    <string name="welcome">"Добро пожаловать! "</string>
+    <string name="invalid_username">Некорректное имя пользователя</string>
+    <string name="invalid_password">Пароль должен содержать >5 символов</string>
+    <string name="login_failed">"Ошибка овторизации"</string>
+    <string name="btn_insert">Добавить</string>
+    <string name="btn_delete">Удалить</string>
+    <string name="btn_update">Изменить</string>
+</resources>

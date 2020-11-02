@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/top_area"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:gravity="center|end"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/main_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingEnd="38dp">
+
+        <ImageButton
+            android:id="@+id/btn_info"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/info_img"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="goInfo"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/nav_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_area"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/compass_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent"
+            android:layout_weight="0.75">
+
+            <TextView
+                android:id="@+id/grad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/grad"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/div_content"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <View
+                android:id="@+id/cursor"
+                android:layout_width="26dp"
+                android:layout_height="38dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/cursor"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/compass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_horizontal"
+                android:src="@drawable/compass_img"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_area"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_area">
+
+        <View
+            android:id="@+id/div_area"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:id="@+id/buttons_area"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:weightSum="2.01">
+
+            <Button
+                android:id="@+id/btn_compass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorDark"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/btn_compass"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/div_buttons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.01"
+                android:background="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/btn_map"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_bg_clr"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/btn_map"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="goMaps"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
