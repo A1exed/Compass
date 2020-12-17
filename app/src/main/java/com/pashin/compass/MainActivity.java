@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     TextView grad;
 
+    public String roundDegree(double degree) {
+        return Math.round(degree) + "";
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

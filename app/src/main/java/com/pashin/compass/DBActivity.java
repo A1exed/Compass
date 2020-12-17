@@ -55,6 +55,13 @@ public class DBActivity extends AppCompatActivity {
         myCursor.close();
     }
 
+    public int count() {
+        Cursor cursor = myDB.rawQuery("select * from visit", null);
+        int res = cursor.getCount();
+        cursor.close();
+        return res;
+    }
+
     public void delete(View view) {
         myDB.execSQL("DELETE FROM visit WHERE id=" + idView.getText().toString());
         selectDB();
@@ -66,6 +73,13 @@ public class DBActivity extends AppCompatActivity {
         cv.put("count", countView.getText().toString());
         myDB.insert("visit", null, cv);
         selectDB();
+    }
+
+    public void insert(String city, String count) {
+        ContentValues cv = new ContentValues();
+        cv.put("city", city);
+        cv.put("count", count);
+        myDB.insert("visit", null, cv);
     }
 
     public void update(View view) {
